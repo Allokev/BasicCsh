@@ -24,9 +24,10 @@ namespace Calc
 
             for(int Month = 1; Month <= 12; Month++)
             {
-                Console.WriteLine(Month + " месяц - "+inMonth + " руб");
+                Console.WriteLine("{0} месяц - {1} руб",Month,Math.Round(inMonth, 1));
                 
             }
+            Console.WriteLine("Общая сумма выплат составит:{0} руб",Math.Round(inMonth, 1) * 12);
             Console.ReadLine();
         }
     }
