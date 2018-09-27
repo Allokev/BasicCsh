@@ -12,12 +12,23 @@ namespace HW_3_1
         {
 
             Console.WriteLine("Введите первое число:");
-            int x = Convert.ToInt32(Console.ReadLine());
+            double x = Convert.ToDouble(Console.ReadLine());
 
             Console.WriteLine("Введите второе число:");
-            int y = Convert.ToInt32(Console.ReadLine());
+            double y = Convert.ToDouble(Console.ReadLine());
 
-            Console.Write("В сумме:" + (x + y));
+            Console.WriteLine("Введите их сумму:");
+            double z = Convert.ToDouble(Console.ReadLine());
+
+            if(z == y + x)
+            {
+                Console.Write("Ответ правильный");
+            }
+            else
+            {
+                Console.Write("Ответ неправильный");
+            }
+            
             Console.Read();
 
         }
