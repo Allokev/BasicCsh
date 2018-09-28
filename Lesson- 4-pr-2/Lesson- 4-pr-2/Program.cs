@@ -44,7 +44,8 @@ namespace Lesson__4_pr_2
                     
 
             }
-            
+            Console.ReadLine();
+
 
 
 
