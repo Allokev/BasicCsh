@@ -10,7 +10,7 @@ namespace Lesson4
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("New branch");
+            Console.WriteLine("Hello World!");
         }
     }
 }
