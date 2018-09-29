@@ -18,7 +18,6 @@ namespace Reverse_word
                 Console.Write(word[number]);
                 
             }
-           
             Console.ReadLine();
         }
     }

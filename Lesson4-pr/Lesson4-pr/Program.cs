@@ -17,7 +17,7 @@ namespace Lesson4_pr
             Console.WriteLine("Введите второе значение:");
             int y = Convert.ToInt32(Console.ReadLine());
 
-            if (y >= 0 & x >= 0)
+            if (y >= 0 || x >= 0)
             {
 
                 if (x == y)
