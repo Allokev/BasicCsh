@@ -19,27 +19,22 @@ namespace HW_4_switch_calc
             Console.WriteLine("Введите арифметический оператор:");
             char symbol = Convert.ToChar(Console.ReadLine());
 
-            double plus = number1 + number2;
-            double minus = number1 - number2;
-            double multiply = number1 * number2;
-            double divide = number1 / number2;
-
             switch (symbol)
             {
                 case '+':
-                    Console.WriteLine("Результат:"+ plus);
+                    Console.WriteLine("Результат: " + (number1 + number2));
                     break;
 
                 case '-':
-                    Console.WriteLine("Результат:" + minus);
+                    Console.WriteLine("Результат: " + (number1 - number2));
                     break;
 
                 case '*':
-                    Console.WriteLine("Результат:" + multiply);
+                    Console.WriteLine("Результат: " + (number1 * number2));
                     break;
 
                 case '/':
-                    Console.WriteLine("Результат:" + divide);
+                    Console.WriteLine("Результат: " + (number1 / number2));
                     break;
 
             }

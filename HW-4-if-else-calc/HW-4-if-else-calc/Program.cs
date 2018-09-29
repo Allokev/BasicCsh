@@ -20,42 +20,27 @@ namespace HW_4_if_else_calc
             Console.WriteLine("Введите арифметический оператор:");
             char symbol = Convert.ToChar(Console.ReadLine());
 
-            double plus = number1 + number2;
-            double minus = number1 - number2;
-            double multiply = number1 * number2;
-            double divide = number1 / number2;
 
-            if (symbol == '+')
-            {
-                Console.WriteLine("Результат: " + plus);
-            }
+
+
+            if (symbol == '+') Console.WriteLine("Результат: " + (number1 + number2));
             else
-            {
-                if (symbol == '-')
-                {
-                    Console.WriteLine("Результат: " + minus);
-                }
-                else
-                {
-                    if (symbol == '*')
-                    {
-                        Console.WriteLine("Результат: " + multiply);
-                    }
-                    else
-                    {
-                        if (symbol == '/')
-                        {
-                            Console.WriteLine("Результат: " + divide);
-                        }
-                    }
-                }
-                
 
+            if (symbol == '-') Console.WriteLine("Результат: " + (number1 - number2));
 
+            if (symbol == '*') Console.WriteLine("Результат: " + (number1 * number2));
+            else
 
-            }
+            if (symbol == '/') Console.WriteLine("Результат: " + (number1 / number2));
+
             Console.ReadLine();
 
+
+
+
         }
+            
+
+        
     }
 }

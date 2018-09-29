@@ -15,7 +15,7 @@ namespace HW_4_Word_s_counting
             int count = 0;
             for(int x = 0; word.Length > x; x++)
             {
-                if (word[x] == 'a'| word[x]=='а')
+                if (word[x] == 'a'|| word[x]=='а')
                 {
                     count++;
                 }
