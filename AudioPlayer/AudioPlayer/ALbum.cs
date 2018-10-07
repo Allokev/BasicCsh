@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace AudioPlayer
 {
-    class ALbum
+   public class ALbum
     {
+       public Song[] songs;
     }
 }

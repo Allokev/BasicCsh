@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 
 namespace AudioPlayer
 {
-    class Genre
+   public class Genre
     {
-        string Name;
+       public string Name;
     }
 }

@@ -6,10 +6,17 @@ using System.Threading.Tasks;
 
 namespace AudioPlayer
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
+           var player = new AudioPlayer();
+
+           
+            
+            Console.WriteLine(player.Volume);
+            Console.ReadLine();
+
         }
     }
 }
