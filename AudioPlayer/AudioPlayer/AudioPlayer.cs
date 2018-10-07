@@ -29,6 +29,22 @@ namespace AudioPlayer
                 else _volume = value;
             }
         }
+        public void Add(string ArtirstSOng)
+        {
+
+        }
+        public void Add(int AlbumPlaylist)
+        {
+
+        }
+        public bool Play()
+        {
+            return true;
+        }
+        public bool Stop()
+        {
+            return true;
+        }
        public Song[] songs;
     }
 }
