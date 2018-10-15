@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2036
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Lesson-8-struct", "Lesson-8-struct\Lesson-8-struct.csproj", "{CD5F3DE9-3422-4CB8-9882-9677D38C919D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CD5F3DE9-3422-4CB8-9882-9677D38C919D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD5F3DE9-3422-4CB8-9882-9677D38C919D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD5F3DE9-3422-4CB8-9882-9677D38C919D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD5F3DE9-3422-4CB8-9882-9677D38C919D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D6E97B73-966A-4DF2-B544-F83D0763D071}
+	EndGlobalSection
+EndGlobal

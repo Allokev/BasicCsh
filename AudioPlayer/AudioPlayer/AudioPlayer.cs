@@ -8,6 +8,12 @@ namespace AudioPlayer
 {
    public class AudioPlayer
     {
+        Artist objectArtist = new Artist();
+        Song PlayingSong = new Song();
+        ALbum objectAlbum = new ALbum();
+        Playlist objectPlaylist = new Playlist();
+        public bool sucessStart, sucessStop, Locked, isPlaying;
+        
 
        public void VolumePlus()
         {
@@ -29,22 +35,51 @@ namespace AudioPlayer
                 else _volume = value;
             }
         }
-        public void Add(string ArtirstSOng)
-        {
 
-        }
-        public void Add(int AlbumPlaylist)
+        public void Add(Artist nameOfArtist)
         {
-
+            songs[0] = objectArtist.artistForsongs;
         }
-        public bool Play()
+        public void Add(Song nameOfSong)
         {
-            return true;
+            songs[0] = PlayingSong;
         }
-        public bool Stop()
+        public void Add(ALbum nameOfAlbum)
         {
-            return true;
+            songs[0] = objectAlbum.songs;
         }
-       public Song[] songs;
+        public void Add(Playlist nameOfPlaylist)
+        {
+            songs[0] = objectPlaylist.songs;
+        }
+        public void Play()
+        {
+            if (sucessStart == true)
+                sucessStart = true;
+            if (Locked == false)
+            {
+                isPlaying = true;
+                for (int i = 0; i <= 10 ; i++)
+                {
+                    Console.WriteLine(PlayingSong.Lyrics);
+                }
+                
+            }
+            
+        }
+        public void Stop()
+        {
+            if(sucessStop == true)sucessStop = true;
+            if(Locked == false) isPlaying = false;
+        }
+        public void Lock()
+        {
+            Locked = true;
+        }
+        public void Unlock()
+        {
+            Locked = true;
+        }
+       Song[] songs;
     }
 }

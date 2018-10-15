@@ -8,13 +8,16 @@ namespace AudioPlayer
 {
    public class Song
     {
-       public string Name;
+        public string Name;
+       public string Lyrics { get; set; }
        public Artist artistOfCurrentSOng;
        public Genre genreOfCurrentSong;
        public int duration;
-        public Song(string x3, int x4 = 4, int x5 = 6)
+        Genre name = new Genre();
+        public void thisSong()
         {
-            Console.WriteLine("Вы выбрали песню {0}, под номером {1}, слушали сегондя {2} раз", x3,x4,x5);
+            Lyrics = "Lyrics of song";
+            Console.WriteLine(Lyrics);
         }
         
     }

@@ -8,6 +8,6 @@ namespace AudioPlayer
 {
    public class Genre
     {
-       public string Name;
+       public enum genreOfSOng { rock, pop, hiphop, metal, trap}
     }
 }

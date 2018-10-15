@@ -11,11 +11,11 @@ namespace AudioPlayer
         public int x1;
         public string x2;
         public string Name;
-        public Song[] songs;
-        public Artist(int number)
+        public Song artistForsongs;
+        public Artist()
          {
-             Console.Write("Вы выбрали артиста под номером:");
-             x1 = number;
+             Console.WriteLine();
+             
          }
         public Artist(double number)
         {

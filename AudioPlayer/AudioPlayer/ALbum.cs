@@ -8,6 +8,7 @@ namespace AudioPlayer
 {
    public class ALbum
     {
-       public Song[] songs;
+        string name;
+       public Song songs;
     }
 }
