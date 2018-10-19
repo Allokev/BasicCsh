@@ -10,10 +10,11 @@ namespace AudioPlayer
     {
         static void Main(string[] args)
         {
-            var player = new AudioPlayer();
-            var songsong = new Song();
+           
+            
             var numberOfArtist = new Artist();   
             var SongInPlayList = new Playlist();
+            //Console.WriteLine(Genre.genreOfSOng.metal);
             /*player.Volume = 100;
             player.VolumeMinus();
             player.VolumeMinus();
@@ -22,10 +23,21 @@ namespace AudioPlayer
             Console.WriteLine(player.Volume);*/
             //Console.WriteLine(numberOfArtist.x1);
             // player.Play();
-            //player.Add(songsong);
-            songsong.thisSong();
+
+
+            //songsong.thisSong();
+            PlaySong();
             Console.ReadLine();
 
+        }
+        private static void PlaySong()
+        {
+            var player = new AudioPlayer();
+            List<Song> songs = new List<Song>();
+
+
+            Song song1 = new Song("Hight way to hell", "It`s been so far...");
+            //player.Add(songs);
         }
     }
 }

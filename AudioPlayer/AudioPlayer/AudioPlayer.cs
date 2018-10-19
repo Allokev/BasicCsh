@@ -6,27 +6,28 @@ using System.Threading.Tasks;
 
 namespace AudioPlayer
 {
-   public class AudioPlayer
+    public class AudioPlayer
     {
         Artist objectArtist = new Artist();
-        Song PlayingSong = new Song();
+        Song PlayingSong;
         ALbum objectAlbum = new ALbum();
         Playlist objectPlaylist = new Playlist();
         public bool sucessStart, sucessStop, Locked, isPlaying;
-        
+        public List<Song> songs = new List<Song>();
 
-       public void VolumePlus()
+
+        public void VolumePlus()
         {
-           Volume =  Volume+1;
+            Volume = Volume + 1;
         }
-       public void VolumeMinus()
+        public void VolumeMinus()
         {
             Volume = Volume - 1;
         }
-       private int _volume;
-       public int Volume
+        private int _volume;
+        public int Volume
         {
-            
+
             get { return _volume; }
             set
             {
@@ -35,22 +36,22 @@ namespace AudioPlayer
                 else _volume = value;
             }
         }
+        public void Add(params Song[] song)
+        {
+            songs = song.ToList();
+        }
+        public void Add(Artist artist)
+        {
+            songs = artist.song;
+        }
 
-        public void Add(Artist nameOfArtist)
+        public void Add(ALbum album)
         {
-            songs[0] = objectArtist.artistForsongs;
+            songs = album.song;
         }
-        public void Add(Song nameOfSong)
+        public void Add(Playlist playlist)
         {
-            songs[0] = PlayingSong;
-        }
-        public void Add(ALbum nameOfAlbum)
-        {
-            songs[0] = objectAlbum.songs;
-        }
-        public void Add(Playlist nameOfPlaylist)
-        {
-            songs[0] = objectPlaylist.songs;
+            songs = playlist.song;
         }
         public void Play()
         {
@@ -59,18 +60,18 @@ namespace AudioPlayer
             if (Locked == false)
             {
                 isPlaying = true;
-                for (int i = 0; i <= 10 ; i++)
+                for (int i = 0; i <= 10; i++)
                 {
                     Console.WriteLine(PlayingSong.Lyrics);
                 }
-                
+
             }
-            
+
         }
         public void Stop()
         {
-            if(sucessStop == true)sucessStop = true;
-            if(Locked == false) isPlaying = false;
+            if (sucessStop == true) sucessStop = true;
+            if (Locked == false) isPlaying = false;
         }
         public void Lock()
         {
@@ -80,6 +81,7 @@ namespace AudioPlayer
         {
             Locked = true;
         }
-       Song[] songs;
+
     }
+
 }

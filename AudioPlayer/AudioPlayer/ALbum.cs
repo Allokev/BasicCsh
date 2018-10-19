@@ -6,9 +6,10 @@ using System.Threading.Tasks;
 
 namespace AudioPlayer
 {
-   public class ALbum
+    public class ALbum
     {
         string name;
-       public Song songs;
+        public List<Song> song;
     }
+
 }

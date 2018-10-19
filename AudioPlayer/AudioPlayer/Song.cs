@@ -6,19 +6,23 @@ using System.Threading.Tasks;
 
 namespace AudioPlayer
 {
-   public class Song
+    public class Song
     {
         public string Name;
-       public string Lyrics { get; set; }
-       public Artist artistOfCurrentSOng;
-       public Genre genreOfCurrentSong;
-       public int duration;
-        Genre name = new Genre();
-        public void thisSong()
-        {
-            Lyrics = "Lyrics of song";
-            Console.WriteLine(Lyrics);
-        }
+        public string Lyrics { get; set; }
+        public Artist artistOfCurrentSOng;
+        public Genre genre { get; set; }
+        public int duration;
         
+        public Song(string Name, string Lyrics)
+        {
+            this.Name = Name;
+            Console.WriteLine(Name);
+            this.Lyrics = Lyrics;
+            Console.WriteLine(Lyrics);
+            
+        }
+
     }
+
 }
