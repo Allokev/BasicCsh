@@ -13,7 +13,8 @@ namespace Collection_List
         static void Main(string[] args)
         {
             //ArrayListPoem();
-            NeighborCollection();
+            DIctionary();
+            //NeighborCollection();
             Console.ReadLine();
         
         }
@@ -80,7 +81,20 @@ namespace Collection_List
                 Console.WriteLine(item);
             }*/
         }
+        public static void DIctionary()
+        {
+            Dictionary<int, Neighbor> dict = new Dictionary<int, Neighbor>();
 
+            dict.Add(203,new Neighbor() { FullName = "Дмитрий", PhoneNumber = 2488901 });
+            dict.Add(202,new Neighbor() { FullName = "Елена", PhoneNumber = 2474503 });
+            dict.Add(204,new Neighbor() { FullName = "Владислав", PhoneNumber = 2436234 });
+
+            Console.Write("Введи номер квартиры соседа:");
+            int number = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine($"Данные - {dict[number]}");
+
+        }
 
 
 
