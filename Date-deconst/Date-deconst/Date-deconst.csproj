@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{9C8DEAFC-5648-46D3-A901-6E4E4B8D0DAE}</ProjectGuid>
+    <ProjectGuid>{900F1926-D195-4F1C-8D48-D0489CBC0D5D}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Date_dis</RootNamespace>
-    <AssemblyName>Date-dis</AssemblyName>
+    <RootNamespace>Date_deconst</RootNamespace>
+    <AssemblyName>Date-deconst</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
