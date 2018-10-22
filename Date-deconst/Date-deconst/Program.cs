@@ -11,28 +11,11 @@ namespace Date_deconst
         static void Main(string[] args)
         {
             var date1 = DateTime.Now;
-
-            var (_, _, _, hours, minutes, seconds) = date1;
-
-
-            Console.WriteLine($"{hours}:{minutes}:{seconds}");
+            var (_, _, _, hour, minut, secu) = date1;
             
+            Console.WriteLine($"{hour}:{minut}:{secu}");
+            Console.ReadLine();
         }
-        public  class DateTimeToday
-        {
-            public  void Deconstruct(this DateTime date,out int yr, out int mnh, out int dy, out int hrs, out int min, out int sec)
-            {
-                yr = date.Year;
-                mnh = date.Month;
-                dy = date.Day;
-                hrs = date.Hour;
-                min = date.Minute;
-                sec = date.Second;
-            }
-        }
-        
-        
-        
         
     }
     
